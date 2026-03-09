@@ -23,6 +23,35 @@ function preload() {
   treeImg = loadImage("tree.png");
   loseImg = loadImage("lose.jpeg");
 }
+// -----------------------------------------------------
+// SCENE1 Properties
+// -----------------------------------------------------
+let s1; 																// Scene1 Class variable
+let s1_Game_Bg = "start_bg.jpg";				// Background image of the scene1
+let s1_StartBtn_Src = "btn_start.png";	// Start Button image of the scene1
+
+// -----------------------------------------------------
+// SCENE2 Properties
+// -----------------------------------------------------
+let s2; 																// Scene 2 Class variable
+let s2_GameBg_Src = "bg.jpg";						// Background image of the scene1
+let s2_Hero_Src = "monkey.gif";					// Hero image for the HeroClass
+let s2_Banana_Src = "banana.png";				// Banana image for the BananaClass
+let s2_GameTime = 30;										// Game Time
+
+// -----------------------------------------------------
+// SCENE3 Properties
+// -----------------------------------------------------
+let s3; // Scene 3
+let s3_Fail_Bg = "bg_fail.jpg";						// Background image of the scene3 -> fail
+let s3_Success_Bg = "bg_success.png";			// Background image of the scene3 -> success
+let s3_ReStartBtn_Src = "btn_restart.png";// Restart Button image of the scene3
+
+// -----------------------------------------------------
+// Global Game Variables
+// -----------------------------------------------------
+let currentScene = 1;										// Variable stores the current game scene 1=Scene1, 2=Scene2, 3=Scene3 
+let totalScore = 0;											// Variable stores the current score
 
 function setup() {
   createCanvas(800, 800);
